@@ -44,7 +44,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src='images/my-logo.png'/></a>
+      <a class="navbar-brand" href="#"><img src='/images/my-logo1x.jpg'/></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -108,12 +108,21 @@
                     <h3>French Quiz</h3>
                     <img src='https://via.placeholder.com/500x300'>
                     <div class="project-details">
-                        <div class="text">Details about the projects, what tech-skills involved, more ideas to develop it in future</div>
+                        <div class="text">Details about the projects, what tech-skills involved, more ideas to develop it in future
+                            <p class='visit-btn'>Check It</p>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class='col-md-6'>
                     <h3>Indian Restaurant</h3>
                     <img src='https://via.placeholder.com/500x300'>
+                    <div class="project-details">
+                        <div class="text">Details about the projects, what tech-skills involved, more ideas to develop it in future
+                            <div class='visit-btn'>Check It</div>
+                        </div>
+                        
+                    </div>
                 </div>
             </section>
         </section>
@@ -159,21 +168,39 @@
             <section class='row skills'>
                 <h1 > Technical Skills</h1>
             </section>
-            <section class='row tech-skill'>
-                <div class='col-md-2'><i class="fab fa-html5"></i></div>
-                <div class='col-md-2'><i class="fab fa-js-square"></i></div>
-                <div class='col-md-2'><i class="fab fa-css3-alt"></i></div>
-                <div class='col-md-2'><img src='https://via.placeholder.com/30'></div>
-                <div class='col-md-2'><i class="fab fa-sass"></i></div>
-                <div class='col-md-2'><img src='https://via.placeholder.com/30'></div>
+            <section class='row tech-skill wow fadeInRight' data-wow-duration="3s">
+                <div class='col-md-2'>
+                    <i class="fab fa-html5"></i>
+                    <span class='icon-meaning'>html5</span>
+                </div>
+                <div class='col-md-2'>
+                    <i class="fab fa-js-square"></i>
+                    <span class='icon-meaning'>javascript</span>
+                </div>
+                <div class='col-md-2'>
+                    <i class="fab fa-css3-alt"></i>
+                    <span class='icon-meaning'>css3</span>
+                </div>
+                <div class='col-md-2' >
+                    <span id='b-icon'>B</span>
+                    <span class='icon-meaning'>bootstrap</span>
+                </div>
+                <div class='col-md-2'>
+                    <span id='scss-icon'>SCSS</span>
+                    <span class='icon-meaning'>sassy css</span>
+                </div>
+                <div class='col-md-2'>
+                    <span id='ps-icon'>PS</span>
+                    <span class='icon-meaning'>adobe photoshop</span>
+                </div>
             </section>
         </section>
-       
+      
          <!-- Education-->
          <section id ='edu' class='row edu'>
             <h1 >Education</h1>
         </section>
-        <div class='row edu'>
+        <div class='row edu wow fadeInLeft' data-wow-duration="3s"> 
            
             <div class='col-md-1 edu-date'><h3>APR</h3><h4>2018</h4></div>
             <div class='col-md-5 edu-info'>
@@ -187,7 +214,7 @@
             </div>        
         </div>
         
-        <div class='row edu'>
+        <div class='row edu wow fadeInRight' data-wow-duration="3s">
             <div class='col-md-1 edu-date'><h3>OCT</h3><h4>2015</h4></div>
             <div class='col-md-5 edu-info'>
                 <h4>Cert teaching and training<br>@ Westhames college </h4>
@@ -200,7 +227,7 @@
             </div>        
         </div>
 
-        <div class='row edu'>
+        <div class='row edu wow fadeInUp' data-wow-duration="3s">
             <div class='col-md-1 edu-date'><h3>SEP</h3><h4>2008</h4></div>
             <div class='col-md-5 edu-info'>
                 <h4>Bachelor of Arts Maths Pedagogy <br>@ Saigon University, Vietnam</h4>
@@ -297,18 +324,72 @@
             <section class="fill-screen fixed-attachment" style="background-image: url()" >   </section>
         </section> -->
         <section id="contact-me" class='row contact-me'>
-            <h1>Contact Me</h1>
-            <h3>Thao Truong</h3>
-            <p id='myphone'> 07547432860</p>
-            <p id='myemail'>ttngocthao_87@yahoo.com</p>
-            <p class='ex-links'>
-                <span><a href="#"><i class="fab fa-linkedin"></i></a></i></span>
-                <span><a href="#"><i class="fab fa-github-square"></i></a></i></span>
-            </p>
+            <div class="row skills">
+                 <h1>Contact Me</h1>
+            </div>
+            <section class='row'>
+                <div class='col-md-6' id='contact-info'>               
+                    <h1>Thao Truong</h1>
+                    <p id='myphone'> 07547432860</p>
+                    <p id='myemail'>ttngocthao_87@yahoo.com</p>
+                    <p class='ex-links'>
+                        <span><a href="#"><i class="fab fa-linkedin"></i></a></i></span>
+                        <span><a href="#"><i class="fab fa-github-square"></i></a></i></span>
+                    </p>
+                </div>
+                <div class='col-md-6'>
+                        <div id="emailForm" >
+                                <form name="sentMessage" id="contactForm" novalidate>
+                                  
+                                  <div class="control-group form-group">
+                                    <div class="controls">
+                                      <label>Name:</label>
+                                      <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                      <p class="help-block"></p>
+                                     </div>
+                                    </div>
+                                  
+                                    <div class="control-group form-group">
+                                      <div class="controls">
+                                        <label>Phone number:</label>
+                                        <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                      </div>
+                                     </div>
+                                  
+                                     <div class="control-group form-group">
+                                       <div class="controls">
+                                         <label>Email address:</label>
+                                         <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                                       </div>
+                                     </div>
+                                  
+                                     <div class="control-group form-group">
+                                       <div class="controls">
+                                          <label>Message:</label>
+                                          <textarea rows="5" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                                       </div>
+                                     </div>
+                                  
+                                     <div id="success"></div>
+                                     <!-- For success/fail messages -->
+                                  
+                                     <div id="submitButtonDiv">
+                                       <button type="submit" id="submitButton" class="btn btn-primary">
+                                         Send Message
+                                       </button>
+                                     </div>
+                                     
+                                  
+                                </form>
+                            </div>
+                </div>
+            </section>
         </section>
 
     <footer>
-        <p>&copy; <a>webiste link</a> &bull;<a href='tel:07547432860'>07547432860</a></p>
+        <p>&copy; 2018 &bull;
+            <a href='tel:07547432860'>07547432860</a>
+        </p>
     </footer>
 </main>
     

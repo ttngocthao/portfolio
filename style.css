@@ -41,6 +41,11 @@ h2 {
 .navbar-brand {
     padding-top:0px;
 }
+.navbar-brand img{
+    padding-top:2px;
+    width: 80%;
+    height: auto;
+}
 
 .fixed-attachment {
     background-attachment: fixed;
@@ -75,14 +80,19 @@ h2 {
 
 #projects .project-details{
   position: absolute;
+  /*these position should be place for hover*/
   bottom:0;
-  width: 100%;
-  height: 80%;
-  opacity: .8;
+  right: 10.5%;
+  /*---------------*/
+  width: 500px;  
+  height: 300px;
+  opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-image: linear-gradient(to bottom right, rgb(2, 92, 122), rgb(3, 175, 233),rgb(249, 250, 250));
 }
-
+#projects .project-details:hover{
+    opacity: .8;
+}
 #projects .project-details .text{
   color: white;
   font-size: 20px;
@@ -93,6 +103,17 @@ h2 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+#projects .project-details .visit-btn{
+    border-top: 1px double rgb(248, 206, 206);
+    border-bottom: 1px double rgb(248, 206, 206);
+    position: relative;
+    width: 50%;
+    margin:5% auto;
+    cursor:pointer;
+    box-shadow: 2px 3px 8px #888888;
+    background-color: #2a5b75;
+    padding: 10px 5px;
 }
 .skills {
     margin-top: 10px;
@@ -105,7 +126,7 @@ h2 {
     letter-spacing: 5px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-image: radial-gradient(black,gray,silver,transparent) 1;
+    border-image: radial-gradient(#f04178,#f7729e,white) 1;
     width: 500px;
     padding: 20px 10px;
     margin: 3rem auto;
@@ -115,16 +136,64 @@ h2 {
     margin: 0px 0px;    
 }
 .tech-skill{
+    text-align: center;
+    font-size: 6rem;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.tech-skill #b-icon {
+    padding: 6px 18px;
+    position: relative;
+    bottom: 1rem;   
+    font-size: 3rem;
+    background-color: rgb(48, 47, 47);
+    color: white;
+    border-radius: 5px;
+    transition: .2s ease-out;
+}
+.tech-skill #ps-icon{
+    padding: 6px 11px;
+    bottom:1rem ;
+    position: relative;
+    font-size: 3rem;
+    background-color: rgb(48, 47, 47);
+    color: white;
+    border-radius: 5px;
+    transition: .2s ease-out;
+}
+.tech-skill #scss-icon{
+    padding: 6px 11px;
+    bottom:1rem ;
+    position: relative;
+    font-size: 3rem;
+    background-color: rgb(48, 47, 47);
+    color: white;
+    border-radius: 5px;
+    transition: .2s ease-out;
+}
+
+.tech-skill .icon-meaning{
+    display:block;
+    opacity:0;
+    text-transform: uppercase;
+    position: relative;
+    top: -80px;
+    transition: 0.3s linear;
+    font-size:1.8rem;
+}
+.tech-skill div:hover #scss-icon, .tech-skill div:hover #ps-icon,.tech-skill div:hover #b-icon{
+    background-color: rgb(248, 172, 198);
+}
+.tech-skill div:hover i{
+    color: rgb(248, 172, 198);
+}
+.tech-skill div:hover .icon-meaning{
+    top:0;
+    opacity:1;
 }
 .edu{
     text-align: center;
     margin: 1.5% 0 ;
-}
-
-.edu-date{
-    
 }
 
 .edu-info{
@@ -136,6 +205,18 @@ h2 {
     padding-left: 2%;
 }
 
+#contact-info{
+    border-right: 2px dashed rgb(184, 184, 184);
+    padding: 5% 0;
+    margin: 2% auto;
+}
+#contact-info h1{
+    border-image: none;
+    font-weight: 500;
+}
+#contact-info p{
+    margin: 5% auto;
+}
 .contact-me {
     text-align: center;
     margin:50px;
@@ -165,6 +246,19 @@ h2 {
 .fa-linkedin:hover, .fa-github-square:hover {
     
     color: #03486d;
+}
+
+
+#emailForm{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+.btn-primary {
+    background-color: #03486d;
 }
 
 footer{
