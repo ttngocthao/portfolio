@@ -91,7 +91,7 @@ h2 {
   background-image: linear-gradient(to bottom right, rgb(2, 92, 122), rgb(3, 175, 233),rgb(249, 250, 250));
 }
 #projects .project-details:hover{
-    opacity: .8;
+    opacity: .9;
 }
 #projects .project-details .text{
   color: white;
