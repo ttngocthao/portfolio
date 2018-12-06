@@ -110,10 +110,14 @@ h2 {
     position: relative;
     width: 50%;
     margin:5% auto;
+    color: white;
     cursor:pointer;
     box-shadow: 2px 3px 8px #888888;
     background-color: #2a5b75;
     padding: 10px 5px;
+}
+#projects .project-details a {
+    text-decoration: none;
 }
 .skills {
     margin-top: 10px;
