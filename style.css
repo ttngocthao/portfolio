@@ -68,8 +68,12 @@ h2 {
     margin: 50px 30px;
     text-align: center;
 }
-.about-me > .col-md-3 > img{
-        margin: 36.6% auto;
+.about-me h4{
+    margin: 2%;
+}
+.about-me #my-photo{        
+        padding: 5% auto;
+        margin-top: 25%;
         box-shadow: 5px 5px 8px 1px grey;
 }
 .projects{
@@ -81,21 +85,23 @@ h2 {
 #projects .project-details{
   position: absolute;
   /*these position should be place for hover*/
+  top:0;
   bottom:0;
-  right: 10.5%;
+  left:-200px;
   /*---------------*/
-  width: 500px;  
-  height: 300px;
+  width:100%;
   opacity: 0;
   transition: .5s ease;
-  background-image: linear-gradient(to bottom right, rgb(2, 92, 122), rgb(3, 175, 233),rgb(249, 250, 250));
+  background-image: linear-gradient(to bottom right, rgb(2, 92, 122),rgb(2, 92, 122), rgb(3, 175, 233),rgb(249, 250, 250));
 }
 #projects .project-details:hover{
     opacity: .9;
+    left:0;
 }
 #projects .project-details .text{
   color: white;
-  font-size: 20px;
+  font-size: 15px;
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -104,17 +110,29 @@ h2 {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+/* #projects .project-details .text ul{
+display: inline-block;
+} */
+#projects .project-details .text ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 20px;
+    margin-top:2%;
+}
+
+
 #projects .project-details .visit-btn{
-    border-top: 1px double rgb(248, 206, 206);
-    border-bottom: 1px double rgb(248, 206, 206);
+    border-top: 0.1px double rgb(248, 206, 206);
+    border-bottom: 0.1px double rgb(248, 206, 206);
     position: relative;
-    width: 50%;
+    width: 30%;
     margin:5% auto;
     color: white;
     cursor:pointer;
-    box-shadow: 2px 3px 8px #888888;
+    /* box-shadow: 2px 3px 8px #888888; */
     background-color: #2a5b75;
-    padding: 10px 5px;
+    padding: 5px;
 }
 #projects .project-details a {
     text-decoration: none;
@@ -211,8 +229,7 @@ h2 {
 
 #contact-info{
     border-right: 2px dashed rgb(184, 184, 184);
-    padding: 5% 0;
-    margin: 2% auto;
+    margin: 1% auto;
 }
 #contact-info h1{
     border-image: none;
@@ -240,6 +257,14 @@ h2 {
     content:'\f0e0';
     padding: 0 2%;
 }
+
+#website::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content:'\f15c';
+    padding: 0 2%;
+}
+
 .fa-linkedin, .fa-github-square {
     font-size: 5rem;
     padding: 0 2%;
